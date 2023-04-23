@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://10.62.0.93:3306/E4J
+    username: root
+    password: Cuit2022
+    driver-class-name: com.mysql.cj.jdbc.Driver
