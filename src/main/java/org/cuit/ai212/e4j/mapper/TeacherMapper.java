@@ -6,4 +6,5 @@ import org.cuit.ai212.e4j.domain.Teacher;
 
 @Mapper
 public interface TeacherMapper extends BaseMapper<Teacher> {
+    Teacher selectByTel(int tel);
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <title>log in</title>
+</head>
+
+<body>
+
+<h1>Please Log In</h1>
+
+<form th:action="@{/login}" method="post">
+    <div>
+        <input type="text" name="username" placeholder="Username" />
+    </div>
+    <div>
+        <input type="password" name="password" placeholder="Password" />
+    </div>
+    <div>
+        <!-- 这个是自己加的, remember me 后面会用 -->
+        <input type="checkbox" name="remember-me" />Remember Me
+    </div>
+    <input type="submit" value="Log in" />
+
+</form>
+
+
+<form th:action="@{/register}">
+    <input type="submit" value="Register">
+</form>
+</body>
+
+</html>

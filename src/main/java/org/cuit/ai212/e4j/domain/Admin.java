@@ -1,6 +1,7 @@
 package org.cuit.ai212.e4j.domain;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
@@ -19,7 +20,6 @@ import lombok.NoArgsConstructor;
 public class Admin {
     @TableId(type = IdType.AUTO)
     private Integer id;
-
     private String username;
 
     private String password;

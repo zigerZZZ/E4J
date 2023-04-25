@@ -3,7 +3,7 @@
 <mapper namespace="org.cuit.ai212.e4j.mapper.StudentMapper">
 
     <select id="selectBySno" resultType="org.cuit.ai212.e4j.domain.Student">
-        select * from t_student where sno = ${sno}
+        select * from t_student where sno = #{sno}
     </select>
 
 
