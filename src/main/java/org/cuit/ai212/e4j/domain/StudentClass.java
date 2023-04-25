@@ -1,4 +1,4 @@
-package org.cuit.ai212.e4j.PO;
+package org.cuit.ai212.e4j.domain;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -17,13 +17,10 @@ import lombok.NoArgsConstructor;
 @Data
 @TableName("t_student_class")
 public class StudentClass {
-
     @TableId(type = IdType.AUTO)
     private Integer id;
-
     //学号
     private Integer sno;
-
     //班级号
     private Integer classId;
 

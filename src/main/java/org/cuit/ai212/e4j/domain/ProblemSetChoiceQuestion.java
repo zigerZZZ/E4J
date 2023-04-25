@@ -1,4 +1,4 @@
-package org.cuit.ai212.e4j.PO;
+package org.cuit.ai212.e4j.domain;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -8,26 +8,28 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @description: t_option表结构一致
+ * @description: t_problem_set_choice_question建立题集与选择题两张表之间的联系
  * @author: ziger
- * @time: 2023/4/23 20:08
+ * @time: 2023/4/23 20:24
  */
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@TableName("t_option")
-public class Option {
+@TableName("t_problem_set_choice_question")
+public class ProblemSetChoiceQuestion {
 
     @TableId(type = IdType.AUTO)
     private Integer id;
 
-    //选项编号,0表示A,1表示B......
-    private Integer optionNumber;
-    //所属选择题的id
-    private Integer choiceQuestionId;
-    //选项内容
-    private String context;
-    //是否为正确选项
-    private Boolean flag;
+    //题集id
+    private Integer problemSetId;
 
+    //选择题Id
+    private Integer choiceQuestionId;
+
+    //相对编号
+    private Integer number;
+
+    //本题对应的分值
+    private  Integer score;
 }

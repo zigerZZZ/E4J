@@ -1,8 +1,8 @@
 package org.cuit.ai212.e4j;
 
-import org.cuit.ai212.e4j.PO.*;
+import org.cuit.ai212.e4j.domain.*;
 import org.cuit.ai212.e4j.mapper.*;
-import org.cuit.ai212.e4j.util.QuestionType;
+import org.cuit.ai212.e4j.utils.QuestionType;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
