@@ -1,4 +1,4 @@
-package org.cuit.ai212.e4j.PO;
+package org.cuit.ai212.e4j.domain;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;

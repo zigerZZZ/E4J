@@ -1,4 +1,4 @@
-package org.cuit.ai212.e4j.PO;
+package org.cuit.ai212.e4j.domain;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -19,7 +19,6 @@ public class Class {
 
     @TableId
     private Integer classId;
-
     //班级名称
     private String name;
     //创建者id

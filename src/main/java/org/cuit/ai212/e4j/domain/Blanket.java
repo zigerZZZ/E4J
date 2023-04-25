@@ -1,4 +1,4 @@
-package org.cuit.ai212.e4j.PO;
+package org.cuit.ai212.e4j.domain;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -16,11 +16,9 @@ import lombok.NoArgsConstructor;
 @Data
 @TableName("t_blanket")
 public class Blanket {
-
     @TableId
     //填空编号，指的是该空在填空题中的位置
     private Integer optionNumber;
-
     //该空对应的填空题id
     private Integer blanketQuestionId;
     //正确答案

@@ -1,4 +1,4 @@
-package org.cuit.ai212.e4j.util.result;
+package org.cuit.ai212.e4j.utils.result;
 
 import lombok.experimental.Accessors;
 

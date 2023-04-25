@@ -2,8 +2,9 @@ package org.cuit.ai212.e4j.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
-import org.cuit.ai212.e4j.PO.Student;
+import org.cuit.ai212.e4j.domain.Student;
 
 @Mapper
 public interface StudentMapper extends BaseMapper<Student> {
+    Student selectBySno(int Sno);
 }

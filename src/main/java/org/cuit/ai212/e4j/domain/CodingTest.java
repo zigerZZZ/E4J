@@ -1,4 +1,4 @@
-package org.cuit.ai212.e4j.PO;
+package org.cuit.ai212.e4j.domain;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -17,10 +17,8 @@ import lombok.NoArgsConstructor;
 @Data
 @TableName("t_coding_test")
 public class CodingTest {
-
     @TableId(type = IdType.AUTO)
     private Integer id;
-
     //测试用例编号
     private Integer testNumber;
     //对应的代码题id

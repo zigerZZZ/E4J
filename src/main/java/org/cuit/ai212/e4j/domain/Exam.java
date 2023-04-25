@@ -1,4 +1,4 @@
-package org.cuit.ai212.e4j.PO;
+package org.cuit.ai212.e4j.domain;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -7,7 +7,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Date;
-import java.sql.Time;
 
 /**
  * @description: 与t_exam表结构一致

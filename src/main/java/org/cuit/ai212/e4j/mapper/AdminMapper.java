@@ -2,8 +2,8 @@ package org.cuit.ai212.e4j.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
-import org.cuit.ai212.e4j.domain.CodingTest;
+import org.cuit.ai212.e4j.domain.Admin;
 
 @Mapper
-public interface CodingTestMapper extends BaseMapper<CodingTest> {
+public interface AdminMapper extends BaseMapper<Admin> {
 }

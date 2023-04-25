@@ -1,4 +1,4 @@
-package org.cuit.ai212.e4j.PO;
+package org.cuit.ai212.e4j.domain;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -16,10 +16,8 @@ import lombok.NoArgsConstructor;
 @Data
 @TableName("t_student")
 public class Student {
-
     @TableId
     private Integer sno;
-
     //学生姓名
     private String name;
     //密码
