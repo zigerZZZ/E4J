@@ -1,5 +1,9 @@
 package org.cuit.ai212.e4j.utils;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @description: 字符串处理工具
  * @author: Chenear
@@ -23,6 +27,19 @@ public class StrUtil {
         return number;
     }
 
+    public static Integer[] strArrayToIntArray(String[] array){
+        if (array==null){
+            return null;
+        }
+        List<Integer> result = new ArrayList<>();
+        for (int i = 0; i < array.length; i++) {
+            if (strToInt(array[i])!=-1){
+                result.add(strToInt(array[i]));
+            }
+        }
+        Integer[] a = {};
+        return result.toArray(a);
+    }
 
 
 }

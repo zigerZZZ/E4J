@@ -2,8 +2,34 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.cuit.ai212.e4j.mapper.StudentMapper">
 
+    <insert id="insertOne">
+        insert into t_student(sno, name, password) VALUE (#{sno}, #{name}, #{password})
+    </insert>
+
+    <update id="update">
+        update t_student set name = #{name}, password = #{password} where sno = #{sno}
+    </update>
+
+    <delete id="deleteBySno">
+        delete
+        from t_student
+        where sno = #{sno}
+    </delete>
+
     <select id="selectBySno" resultType="org.cuit.ai212.e4j.domain.Student">
-        select * from t_student where sno = #{sno}
+        select *
+        from t_student
+        where sno = #{sno}
+    </select>
+    <select id="selectAll" resultType="org.cuit.ai212.e4j.domain.Student">
+        select *
+        from t_student
+        limit #{page},#{size}
+    </select>
+    <select id="selectByName" resultType="org.cuit.ai212.e4j.domain.Student">
+        select *
+        from t_student
+        where name = #{name}
     </select>
 
 

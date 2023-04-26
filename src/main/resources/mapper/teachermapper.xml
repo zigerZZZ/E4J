@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.cuit.ai212.e4j.mapper.TeacherMapper">
+    <insert id="insertOne">
+        insert into t_teacher (tel, name, password) VALUE (#{tel}, #{name}, #{password})
+    </insert>
+    <update id="update">
+        update t_teacher
+        set name     = #{name},
+            tel      = #{tel},
+            password = #{password}
+        where id = #{id};
+    </update>
+    <delete id="deleteById">
+        delete
+        from t_teacher
+        where id = #{id}
+    </delete>
     <select id="selectByTel" resultType="org.cuit.ai212.e4j.domain.Teacher">
-        select * from t_teacher where tel = #{tel}
+        select *
+        from t_teacher
+        where tel = #{tel}
+    </select>
+    <select id="selectAll" resultType="org.cuit.ai212.e4j.domain.Teacher">
+        select *
+        from t_teacher
+        limit #{page},#{size}
+    </select>
+    <select id="selectByName" resultType="org.cuit.ai212.e4j.domain.Teacher">
+        select *
+        from t_teacher
+        where name = #{name}
+    </select>
+    <select id="selectById" resultType="java.lang.Integer">
+        select *
+        from t_teacher
+        where id = #{id}
     </select>
 </mapper>

@@ -20,7 +20,13 @@ import lombok.NoArgsConstructor;
 public class Admin {
     @TableId(type = IdType.AUTO)
     private Integer id;
+
     private String username;
 
     private String password;
+
+    public Admin(String username,String password){
+        this.password = password;
+        this.username = username;
+    }
 }
